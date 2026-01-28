@@ -1,0 +1,68 @@
+*{
+    border: 0cap solid red;
+}
+
+.container{
+    background-color: aqua;
+    display: grid;
+    grid-template-columns:1fr 3fr ;
+    grid-template-rows: 80px 1fr 80px;
+    height: 100vh;
+    gap: 10px;
+ 
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between ;
+    
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background: yellow;
+       border-radius: 10px;
+    
+    
+}
+
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+ 
+
+    grid-column: 1/2;
+    grid-row:2/3 ;
+background-color: gold;
+   border-radius: 10px;
+padding: 30px;}
+
+
+
+
+.contact{
+    grid-column: 2/3;
+    grid-column: 2/3;
+    background-color:black;
+       border-radius: 10px;
+}
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    grid-column: 1/3;
+    grid-row: 3/4;
+    background-color: silver;
+   
+    border-radius: 10px;
+}
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    align-self: center;
+    margin: 20px;
+}
